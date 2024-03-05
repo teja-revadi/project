@@ -1,0 +1,102 @@
+[
+    {
+        "model": "notes.note",
+        "pk": 1,
+        "fields": {
+            "title": "Meeting Agenda - Marketing Strategy",
+            "body": "Discuss new marketing campaign ideas.\nReview budget allocation for advertising.\nAssign tasks for social media engagement.",
+            "created_at": "2024-03-05T09:00:00.000Z",
+            "updated_at": "2024-03-05T09:00:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 2,
+        "fields": {
+            "title": "Grocery Shopping List",
+            "body": "Milk\nEggs\nBread\nApples\nChicken\nSpinach",
+            "created_at": "2024-03-05T10:30:00.000Z",
+            "updated_at": "2024-03-05T10:30:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 3,
+        "fields": {
+            "title": "Project Milestones - Website Development",
+            "body": "Complete wireframe designs by end of week.\nDevelop homepage layout and navigation.\nIntegrate payment gateway for e-commerce functionality.",
+            "created_at": "2024-03-05T11:45:00.000Z",
+            "updated_at": "2024-03-05T11:45:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 4,
+        "fields": {
+            "title": "Travel Itinerary - Paris Trip",
+            "body": "Flight: JFK to CDG - March 10, 2024, 9:00 AM\nHotel: Le Méridien Etoile, check-in March 10, 2024, check-out March 15, 2024\nSightseeing: Louvre Museum, Eiffel Tower, Notre-Dame Cathedral",
+            "created_at": "2024-03-05T13:20:00.000Z",
+            "updated_at": "2024-03-05T13:20:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 5,
+        "fields": {
+            "title": "Fitness Plan - Weekly Workouts",
+            "body": "Monday: Cardio - 30 minutes\nTuesday: Strength Training - Upper Body\nWednesday: Yoga - 45 minutes\nThursday: Rest\nFriday: Cardio - 30 minutes\nSaturday: Strength Training - Lower Body\nSunday: Rest",
+            "created_at": "2024-03-05T14:50:00.000Z",
+            "updated_at": "2024-03-05T14:50:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 6,
+        "fields": {
+            "title": "Recipe - Spaghetti Bolognese",
+            "body": "Ingredients:\n- Spaghetti\n- Ground beef\n- Onion\n- Garlic\n- Tomato sauce\n- Italian seasoning\n- Parmesan cheese\nDirections:\n1. Cook spaghetti according to package instructions.\n2. In a skillet, cook ground beef, onion, and garlic until browned.\n3. Add tomato sauce and Italian seasoning, simmer for 15 minutes.\n4. Serve over cooked spaghetti, garnish with Parmesan cheese.",
+            "created_at": "2024-03-05T16:15:00.000Z",
+            "updated_at": "2024-03-05T16:15:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 7,
+        "fields": {
+            "title": "Book Summary - The Great Gatsby",
+            "body": "Summary:\nThe Great Gatsby follows the lives of the narrator, Nick Carraway, and his mysterious neighbor Jay Gatsby. Set in the roaring twenties, the novel explores themes of love, wealth, and the American Dream. Gatsby's obsession with Daisy Buchanan leads to tragedy, highlighting the emptiness of materialism and the illusion of the American Dream.",
+            "created_at": "2024-03-05T17:40:00.000Z",
+            "updated_at": "2024-03-05T17:40:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 8,
+        "fields": {
+            "title": "Meeting Minutes - Team Standup",
+            "body": "Attendees: John, Sarah, David, Lisa\nAgenda: Project updates, blockers, upcoming tasks\nHighlights:\n- John: Completed backend API integration.\n- Sarah: Resolved UI bug on login page.\n- David: Presented new feature wireframes.\n- Lisa: Discussed timeline for QA testing.\nAction Items:\n- John to deploy API changes.\n- Sarah to coordinate user testing.\n- David to finalize feature specifications.\n- Lisa to schedule QA testing sessions.",
+            "created_at": "2024-03-05T18:55:00.000Z",
+            "updated_at": "2024-03-05T18:55:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 9,
+        "fields": {
+            "title": "Study Notes - Biology Exam",
+            "body": "Topics to Review:\n- Cell structure and function\n- Genetics and heredity\n- Evolutionary biology\n- Ecology and ecosystems\nStudy Plan:\n1. Review lecture notes and textbook chapters.\n2. Create flashcards for key terms and concepts.\n3. Complete practice questions and quizzes.\n4. Form study groups for collaborative learning.\nExam Date: March 15, 2024",
+            "created_at": "2024-03-05T20:10:00.000Z",
+            "updated_at": "2024-03-05T20:10:00.000Z"
+        }
+    },
+    {
+        "model": "notes.note",
+        "pk": 10,
+        "fields": {
+            "title": "Daily Journal Entry",
+            "body": "March 5, 2024:\n- Started the day with a morning jog, felt invigorated.\n- Attended a productive team meeting, discussed project priorities.\n- Met a friend for lunch, enjoyed catching up.\n- Spent the evening reading a new book, relaxing.\nOverall, a fulfilling day!",
+            "created_at": "2024-03-05T21:30:00.000Z",
+            "updated_at": "2024-03-05T21:30:00.000Z"
+        }
+    }
+]
