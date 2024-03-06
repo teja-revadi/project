@@ -64,6 +64,9 @@
         border-radius: 5px;
         cursor: pointer;
       }
+      .search-form button:hover {
+        background-color: rgb(0, 100, 1);;
+      }
 
       /* Create button styles */
       .create-button {
@@ -110,8 +113,13 @@
 
       {% for obj in object_list %}
       <div class="note">
-        <h2>{{ obj.title }}</h2>
-        <p>{{ obj.body }}</p>
+        <label for="id_title">Title:</label>
+        <span class="title">{{ obj.title }}</span>
+        <br><br>
+        <label for="id_body">Body:</label>
+        <span class="title">{{ obj.body }}</span>
+        <br>
+        <br>
         <a href="{% url 'edit_note' obj.id %}" class="edit-button">Edit</a>
       </div>
       {% empty %}
