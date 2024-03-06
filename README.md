@@ -50,7 +50,6 @@ It also has a frontend UI to see,search and create notes.
 6. Run migrations:
 
     ```bash
-    python manage.py makemigrations
     python manage.py migrate
     ```
 
@@ -61,6 +60,13 @@ It also has a frontend UI to see,search and create notes.
     ```
 
 8. Access the app in your browser at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+
+## Testing
+To test the sample test cases:
+
+ ```bash
+ python manage.py test.py
+ ```
 
 ## API Documentation
 
