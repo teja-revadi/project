@@ -2,8 +2,60 @@ from notes.models import Note
 from rest_framework.response import Response
 from notes.serializers import NoteSerializer
 from rest_framework import status, viewsets
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
+from .forms import NoteForm
+from drf_yasg.utils import swagger_auto_schema
+from rest_framework.views import APIView
 
+class YourAPIView(APIView):
+
+    @swagger_auto_schema(
+        operation_summary="Summary of your operation",
+        operation_description="Description of your operation",
+        responses={200: 'Success response'},
+        tags=['Your Tag'],
+    )
+    def get(self, request):
+        # Your view logic
+        return Response("Your response data")
+
+
+def object_list_view(request):
+    objects = Note.objects.all().order_by("-created_at")
+
+    query = request.GET.get('title')
+    if query:
+        # Filter objects based on the search query (you might need to adjust this based on your model fields)
+        objects = objects.filter(title__icontains=query)
+
+    # Render the template with the list of objects
+    return render(request, 'notes/query_list.html', {'object_list': objects})
+
+def edit_note(request, note_id):
+    note = get_object_or_404(Note, id=note_id)
+
+    if request.method == 'POST':
+        form = NoteForm(request.POST, instance=note)
+        if form.is_valid():
+            form.save()
+            # Redirect to the list of notes or any other appropriate page
+            return redirect('object_list')
+    else:
+        form = NoteForm(instance=note)
+
+    # Render the template with the note and the form
+    return render(request, 'notes/edit_note.html', {'note': note, 'form': form})
+
+def create_note(request):
+    if request.method == 'POST':
+        form = NoteForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('object_list')  # Redirect to the notes list page after creating a new note
+    else:
+        form = NoteForm()
+
+    return render(request, 'notes/create_note.html', {'form': form})
 
 class NoteViewSet(viewsets.ModelViewSet):
     queryset = Note.objects.all().order_by("-created_at")
